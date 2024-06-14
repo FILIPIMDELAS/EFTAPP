@@ -1,0 +1,54 @@
+Coisas a se fazer no acomp
+
+criar bloco a partir do banco ✔
+criar card a partir do banco ✔
+criar subCard a partir do banco ✔
+criar checklist a partir do banco ✔
+
+criar bloco do front ✔
+criar card do front ✔
+criar subCard do front ✔
+criar checklist do front ✔
+
+excluir bloco do banco ✔
+excluir card do banco ✔
+excluir subCard do banco ✔
+excluir checklist do banco ✔
+
+excluir bloco do front ✘
+excluir card do front ✘
+excluir subCard do front ✘
+excluir checklist do front ✘
+
+cadastra novo bloco no banco ✔
+cadastra novo card no banco ✔
+cadastra novo subCard no banco ✔
+cadasra novo checklist no banco ✔
+
+edita bloco no banco ✔
+edita card no banco ✔
+edita subcard no banco ✔
+edita checklist no banco - ativando quando o checkbox for marcado ✘
+
+vincular a função de cadastrar novo a função cria do front ✔
+
+vincular a função de excluir do banco ao excluir do card ✘
+
+vincular a função cadastrar novo aos respectivos inputs ✘
+
+vincular a exclusão aos respectivos ícone delete ✘
+
+vincular a edição aos respectivos ícones de edit ✘
+
+pegar o usuário de cadastro ✘
+
+fazer a função de cadastrar card tanto do card quanto do checklist com usuário ✘
+
+fazer os checkbox atualizar o status ao banco ✘
+
+
+
+arrumar bug de mostrar mais opções ✘
+
+
+mais importante de todas: deixar bonito ✘
