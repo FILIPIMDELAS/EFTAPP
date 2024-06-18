@@ -1,0 +1,297 @@
+:root{
+    --corAzul: #150698;
+    --corBranca: #ffffff;
+    --corAzulClara: #2833d3;
+    --corPreta: #000000;
+    --corCinzaEscuro: #d1d1d1;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: inherit;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.Lateral{
+    display: flex;
+    height: 100%;
+    width: 15%;
+    background-color: var(--corAzul);
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+    & img{
+        height: 100px;
+        border-radius: 50%;
+        margin: 50px 0px 10px 0px;
+    }
+
+    & .div_dash{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    & .div_dash:hover{
+        cursor: pointer;
+        background-color: var(--corBranca);
+        color: var(--corPreta);
+    }
+
+    & .div_acomp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;       
+    }
+
+    & .div_acomp:hover{
+        cursor: pointer;
+        background-color: var(--corBranca);
+        color: var(--corPreta);
+    }
+}
+
+.Principal{
+    display: flex;
+    height:88%;
+    width: 85%;
+    gap: 30px;
+    padding: 50px 30px 30px 30px;
+}
+
+.Bloco_Principal{
+    display: flex;
+    min-width: 250px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corCinzaEscuro);
+}
+
+.Bloco_Principal:hover{
+    cursor: pointer;
+}
+
+.icone_volta{
+    display: block;
+    position: absolute;
+    margin: -40px 0px 0px -20px;
+    color: var(--corBranca) ;
+    background-color: var(--corPreta);
+    border-radius: 50%;
+}
+
+.icone_volta:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.div_newTitle{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: -40px 0px 0px 40px;
+
+    & button{
+        height: 27px;
+        width: 100px;
+        background-color: var(--corAzul);
+        color: var(--corBranca);
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    & button:hover{
+        cursor: pointer;
+        scale: 1.05;
+    }
+
+    & input{
+        display: none;
+        padding: 0px 5px;
+        height: 20px;
+        width: 220px;
+        background-color: var(--corCinzaEscuro);
+        border-radius: 5px;
+    }
+
+    & input::placeholder{
+        font-size: 0.9em;
+        color: var(--corPreta);
+    }
+
+    & i{
+        display: none;
+        position: absolute;
+        margin: 0px 0px 0px 315px;
+        font-size: 1.2em;
+    }
+
+    & i:hover{
+        cursor: pointer;
+    }
+}
+
+.Section_Principal{
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    min-width: 250px;
+    background-color: var(--corCinzaEscuro);
+    border-radius: 5px;
+
+    & .header_Card{
+        display: flex;
+        height: 20px;
+        align-items: center;
+        padding: 7px 7px 5px 10px;
+        font-size: 1em;
+        color: var(--corPreta);
+
+        & h4{
+            font-weight: 500;
+        }
+
+        & i{
+            margin: 0px 0px 0px auto;
+            font-size: 1.2em;
+        }
+
+        & i:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+    }
+
+    & .div_subCard_conteudo{
+        height: min-content;
+        background-color: var(--corBranca);
+        margin: 5px 5px;
+        border-radius: 5px;
+
+        & header{
+            display: flex;
+            height: 20px;
+            align-items: center;
+            padding: 7px 7px 5px 10px;
+            font-size: 0.97em;
+
+            & h4{
+                font-weight: 500;
+            }
+
+            & i{
+                margin: 0px 0px 0px auto;
+                font-size: 1.2em;
+            }
+    
+            & i:hover{
+                cursor: pointer;
+                scale: 1.05;
+            }
+        }
+
+        & .div_checklist_conteudo{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 30px;
+            margin: 15px 0px 10px 0px;
+            gap: 5px;
+
+            & section{
+                display: flex;
+                align-items: center;
+                font-size: 0.7em;
+
+                & input{
+                    margin-right: 4px;
+                    accent-color: black ;
+                }
+            }
+        }
+
+        & footer{
+            display: flex;
+            font-size: 0.8em;
+
+            & p{
+                margin: 0px auto 0px 10px;
+            }
+
+            & .icone_mais_funcoes_subCard{
+                margin: 0px 9px 0px auto;
+                font-size: 1.1em;
+            }
+
+            & .icone_mais_funcoes_subCard:hover{
+                cursor: pointer;
+                scale: 1.05;
+            }
+        }
+    }
+
+    & footer{
+        display: flex;
+        padding: 10px 0px 5px 0px;
+        align-items: center;
+        justify-content: center;
+
+        & button{
+            display: flex;
+            padding: 0px;
+            margin: auto;
+            align-items: center;
+            font-size: 0.85em;
+            background-color: #0000;
+            color: var(--corPreta);
+            & i{
+                font-size: 1.4em;
+            }
+        }
+
+        & button:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+
+        & .div_mais_funcoes{
+            display: none;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 100px;
+            border: 2px solid black;
+            margin: 60px 0px 0px 300px;
+            background-color: aquamarine;
+            padding: 0px;
+
+            & div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+        }
+    }
+}
+
+
